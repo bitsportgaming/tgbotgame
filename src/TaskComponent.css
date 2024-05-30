@@ -1,0 +1,138 @@
+/* General container styling */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+}
+
+/* Header styling */
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.header h1 {
+    font-size: 2em;
+    margin: 10px 0;
+    color: black; /* Change text color to white */
+}
+
+.header h2 {
+    font-size: 1.2em;
+    color: black; /* Change text color to white */
+}
+
+/* Task list styling */
+.tasks {
+    list-style-type: none;
+    padding: 0;
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    color: black; /* Change text color to white */
+}
+
+.task.completed {
+    background-color: #e0f7fa;
+    text-decoration: line-through;
+}
+
+.task.completed:hover {
+    background-color: #4caf50; /* Change hover color to green for completed tasks */
+}
+
+.task:hover {
+    background-color: #f1f1f1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.task-points {
+    font-weight: bold;
+    color: #00796b;
+    margin-left: 10px;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #ccc;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.icon.check {
+    background-color: #00796b;
+}
+
+/* Play button styling */
+#playGameButton {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    font-size: 18px;
+}
+
+#playGameButton:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+#playGameButton:hover:not(:disabled) {
+    background-color: #0056b3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* No tasks styling */
+.no-tasks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f8f9fa;
+    font-size: 18px;
+    text-align: center;
+}
+
+.no-tasks h2 {
+    margin-top: 0;
+    color: #00796b;
+    font-size: 1.8em;
+}
+
+.no-tasks p {
+    margin-bottom: 0;
+    color: #333;
+}
+
+/* Additional styles to handle layout reset */
+.hidden {
+    display: none;
+}
